@@ -18,6 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
             $_SESSION['error_message'] = "Username or Password are incorrect";
             header("Location:login.php");
         }
+
+
     } else {
         $_SESSION['error_message'] = "Fields must  not be empty";
         header("Location:login.php");
